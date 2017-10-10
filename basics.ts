@@ -19,3 +19,27 @@ let complexObject:{data:number[], output:(all:boolean)=>number[]} = {
     }
 }
 console.log(complexObject);
+var array = [
+    {
+        "ID" : "1",
+        "Name" : "Hari poorna",
+        "Role" : "employee"
+    },
+    {
+        "ID" : "2",
+        "Name" : "Tharun",
+        "Role" : "employee"
+    }
+]
+array.forEach(element => {
+    console.log(element);
+});
+array.forEach(function(element){
+    console.log(element.Name);
+})
+var entriesArray = ['a', 'b', 'c'];
+var iterator = entriesArray.entries();
+console.log(entriesArray)
+for (let e of iterator) {
+  console.log(e);
+}
